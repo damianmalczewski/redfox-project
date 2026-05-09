@@ -3,7 +3,6 @@
 #
 [versions]
 archunit = "1.4.2"
-checkmate = "0.0.8"
 fasterxml-jackson = "2.21.3"
 idea-ext = "1.4.1"
 junit = "6.0.3"
@@ -72,7 +71,7 @@ tools-jackson-module-kotlin = { module = "tools.jackson.module:jackson-module-ko
 #  other modules
 #
 archunit = { module = "com.tngtech.archunit:archunit-junit5", version.ref = "archunit" }
-checkmate = { module = "io.github.malczuuu:checkmate", version.ref = "checkmate" }
+checkmate = { module = "io.github.malczuuu:checkmate" }
 kotlin-reflect = { module = "org.jetbrains.kotlin:kotlin-reflect", version.ref = "kotlin" }
 kotlin-test-junit5 = { module = "org.jetbrains.kotlin:kotlin-test-junit5", version.ref = "kotlin" }
 wiremock-spring-boot-standalone = { module = "org.wiremock.integrations:wiremock-spring-boot-standalone", version.ref = "wiremock-spring-boot" }
