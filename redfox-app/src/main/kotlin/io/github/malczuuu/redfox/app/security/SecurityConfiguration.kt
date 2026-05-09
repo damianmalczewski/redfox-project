@@ -1,7 +1,6 @@
 package io.github.malczuuu.redfox.app.security
 
 import io.github.problem4j.core.Problem
-import io.github.problem4j.core.ProblemBuilder
 import io.github.problem4j.core.ProblemContext
 import io.github.problem4j.spring.webmvc.resolver.NoHandlerFoundProblemResolver
 import io.github.problem4j.spring.webmvc.resolver.NoResourceFoundProblemResolver
@@ -81,20 +80,20 @@ class SecurityConfiguration(jsonMapper: JsonMapper) {
   }
 
   private open class ExtNoHandlerFoundProblemResolver : NoHandlerFoundProblemResolver() {
-    override fun resolveBuilder(
+    override fun resolve(
         context: ProblemContext,
         ex: Exception,
         headers: HttpHeaders,
         status: HttpStatusCode,
-    ): ProblemBuilder = Problem.builder().status(HttpStatus.UNAUTHORIZED.value())
+    ): Problem = Problem.builder().status(HttpStatus.UNAUTHORIZED.value()).build()
   }
 
   private open class ExtNoResourceFoundProblemResolver : NoResourceFoundProblemResolver() {
-    override fun resolveBuilder(
+    override fun resolve(
         context: ProblemContext,
         ex: Exception,
         headers: HttpHeaders,
         status: HttpStatusCode,
-    ): ProblemBuilder = Problem.builder().status(HttpStatus.UNAUTHORIZED.value())
+    ): Problem = Problem.builder().status(HttpStatus.UNAUTHORIZED.value()).build()
   }
 }
