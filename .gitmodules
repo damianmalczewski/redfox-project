@@ -1,3 +1,0 @@
-[submodule "redfox-vendor/checkmate"]
-	path = redfox-vendor/checkmate
-	url = git@github.com:damianmalczewski/checkmate

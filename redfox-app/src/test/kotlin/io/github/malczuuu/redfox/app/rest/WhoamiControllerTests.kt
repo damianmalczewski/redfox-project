@@ -1,12 +1,12 @@
 package io.github.malczuuu.redfox.app.rest
 
-import io.github.malczuuu.checkmate.annotation.ContainerTest
-import io.github.malczuuu.checkmate.container.PostgresAwareTest
 import io.github.malczuuu.redfox.app.Application
 import io.github.malczuuu.redfox.app.domain.UserEntity
 import io.github.malczuuu.redfox.app.domain.UserRepository
+import io.github.malczuuu.redfox.testkit.ContainerTest
 import io.github.malczuuu.redfox.testkit.JwtTestHelper
 import io.github.malczuuu.redfox.testkit.MockJwtTest
+import io.github.malczuuu.redfox.testkit.PostgresAwareTest
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test

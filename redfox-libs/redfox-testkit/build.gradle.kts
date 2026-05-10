@@ -19,7 +19,6 @@ dependencies {
     api(libs.testcontainers.postgresql)
 
     api(libs.archunit)
-    api(libs.checkmate)
     api(libs.tools.jackson.module.kotlin)
     api(libs.kotlin.reflect)
     api(libs.kotlin.test.junit5)

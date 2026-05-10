@@ -6,10 +6,10 @@ import com.github.tomakehurst.wiremock.client.WireMock.okJson
 import com.github.tomakehurst.wiremock.client.WireMock.post
 import com.github.tomakehurst.wiremock.client.WireMock.unauthorized
 import com.github.tomakehurst.wiremock.client.WireMock.urlEqualTo
-import io.github.malczuuu.checkmate.annotation.ContainerTest
-import io.github.malczuuu.checkmate.container.PostgresAwareTest
 import io.github.malczuuu.redfox.app.Application
 import io.github.malczuuu.redfox.app.domain.UserRepository
+import io.github.malczuuu.redfox.testkit.ContainerTest
+import io.github.malczuuu.redfox.testkit.PostgresAwareTest
 import io.github.problem4j.core.Problem
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.BeforeEach

@@ -1,8 +1,8 @@
 package io.github.malczuuu.redfox.authserver.security
 
-import io.github.malczuuu.checkmate.annotation.ContainerTest
-import io.github.malczuuu.checkmate.container.PostgresAwareTest
 import io.github.malczuuu.redfox.authserver.AuthServerApplication
+import io.github.malczuuu.redfox.testkit.ContainerTest
+import io.github.malczuuu.redfox.testkit.PostgresAwareTest
 import java.util.*
 import org.assertj.core.api.Assertions.assertThat
 import org.assertj.core.api.Assertions.assertThatThrownBy

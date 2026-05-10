@@ -19,8 +19,6 @@ include(":redfox-libs:redfox-log4j2")
 include(":redfox-libs:redfox-migration")
 include(":redfox-libs:redfox-testkit")
 
-includeBuild("redfox-vendor/checkmate")
-
 verifyProjectNameDuplicates(rootProject)
 
 /**

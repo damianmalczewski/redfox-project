@@ -5,13 +5,6 @@
 
 > **Proof of Concept** - demonstrates OAuth2 PKCE authentication across a three-tier Spring Boot + Angular architecture.
 
-> Note: This project uses [`checkmate`](https://github.com/malczuuu/checkmate) library included as git submodule. Make
-> sure to initialize and update submodules after cloning:
->
-> ```bash
-> git submodule update --init --recursive
-> ```
-
 ## Applications
 
 | Application           | Port | Description                                                                                                                                                                                                                                                                                     |

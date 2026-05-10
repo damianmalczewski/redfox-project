@@ -1,7 +1,7 @@
 package io.github.malczuuu.redfox.authserver
 
-import io.github.malczuuu.checkmate.annotation.ContainerTest
-import io.github.malczuuu.checkmate.container.PostgresAwareTest
+import io.github.malczuuu.redfox.testkit.ContainerTest
+import io.github.malczuuu.redfox.testkit.PostgresAwareTest
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.test.context.ActiveProfiles
